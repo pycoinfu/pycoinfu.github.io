@@ -90,11 +90,11 @@ function displayWeather(info) {
   cityName.textContent = info.name;
   degrees.textContent = `${kelvinToC(info.main.temp)}°`;
   feelsLike.innerHTML = `Ощущается как <b>${kelvinToC(info.main.feels_like)}°</b>`;
-  humidity.textContent = `Влажность: ${info.main.humidity}%`;
-  windSpeed.textContent = `Скорость ветра: ${info.wind.speed} м/с`;
-  pressure.textContent = `Атмосферное давление: ${hPaTommHg(
+  humidity.innerHTML = `Влажность: <b>${info.main.humidity}%</b>`;
+  windSpeed.innerHTML = `Скорость ветра: <b>${info.wind.speed} м/с</b>`;
+  pressure.innerHTML = `Атмосферное давление: <b>${hPaTommHg(
     info.main.pressure
-  )} мм. рт. ст.`;
+  )} мм. рт. ст.</b>`;
   icon.src = `https://openweathermap.org/img/wn/${info.weather[0].icon}@2x.png`
   verbalData.textContent = capitalize(parseVerbalData(info.weather[0]));
 }
