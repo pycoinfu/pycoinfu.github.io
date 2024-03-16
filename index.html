@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weathuh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="input-wrapper">
+            <input class="city-input" type="text" id="cityInput" placeholder="Введите город..." autocomplete="off">
+            <button class="search-btn" id="search">Поиск</button>
+        </div>
+        <br>
+        <div class="weather">
+            <h1 class="city-name" id="cityName"></h1>
+            <div class="main-data">
+                <div class="main-data-numbers">
+                    <h1 class="degrees" id="degrees"></h1> <br>
+                    <p class="feels-like" id="feelsLike"></p> <br>
+                </div>
+                <div class="border-vertical"></div>
+                <div class="verbal-data">
+                    <img src="" alt="" class="verbal-data-icon" id="icon">
+                    <p class="verbal-data-text" id="verbalData"></p>
+                </div>
+            </div>
+            <div class="border-horizontal"></div>
+            <p class="humidity" id="humidity"></p> <br>
+            <p class="wind-speed" id="windSpeed"></p> <br>
+            <p class="pressure" id="pressure"></p> <br>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
