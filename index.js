@@ -1,9 +1,9 @@
-function fetchLocation() {
-  fetch("http://ip-api.com/json/")
-    .then((res) => res.json())
-    .then((data) => fetchWeather(data.city))
-    .catch((err) => console.log(err));
-}
+// function fetchLocation() {
+//   fetch("http://ip-api.com/json/")
+//     .then((res) => res.json())
+//     .then((data) => fetchWeather(data.city))
+//     .catch((err) => console.log(err));
+// }
 
 function kelvinToC(val) {
   return Math.round(val - 273.15);
