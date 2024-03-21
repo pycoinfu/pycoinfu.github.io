@@ -120,6 +120,13 @@ search.addEventListener("click", () => {
   const city = input.value;
   input.value = "";
   fetchWeather(city)
-})
+});
 
-const key = prompt("Введите ключ API: ")
+//const key = prompt("Введите ключ API: ")
+let key;
+(new URL(window.location.href)).searchParams.forEach((x, y) => {
+  if (y === "apikey") {
+    key = x
+  }
+});
+console.log(key)
